@@ -5,6 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: run_digest.sh
       - name: Resize Images in resize/ directory
         run: |
           bash ${GITHUB_WORKSPACE}/run_digest.sh
