@@ -29,4 +29,4 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run python file on every file in resize/
         run: |
-          bash ${GITHUB_WORKSPACE}/scripts/run_digest.sh
+          bash ${GITHUB_WORKSPACE}/run_digest.sh
