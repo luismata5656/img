@@ -29,9 +29,4 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run python file on every file in resize/
         run: |
-          for d in resize/*/; do
-            for file in "$d"/*
-            do
-                python __init__.py "$file"
-            done
-          done
+          bash ${GITHUB_WORKSPACE}/scripts/run_digest.sh
