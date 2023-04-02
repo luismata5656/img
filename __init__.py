@@ -9,6 +9,7 @@ img_name = img.split(".")[0]
 # Create a list of tuples with the sizes
 sizes = [(1920,1080),
          (1600,900),
+         (1024,1024),
          (1280,720),
          (960,540),
          (64,64),]
